@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Provider for beginners'),
+          title:  Center(child: Text('Provider '+ Provider.of<MyProvider>(context).getCounter.toString())),
         ),
         body: Center(
           child: Column(
